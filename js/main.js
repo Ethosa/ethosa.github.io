@@ -20,7 +20,6 @@ discord.addEventListener("click", e =>
             return
         }
         toast.style.opacity = "0%";
-        toast.style.top = "94%";
         handler = setInterval(toast_show, 1000 / 60);
         navigator.clipboard.writeText("Ethosa#5301").then(function() {
           console.log('Async: Copying to clipboard was successful!');
