@@ -7,8 +7,8 @@ body {
     color:  #333333;
 
     background: linear-gradient(to right, #aa4b6b, #6b6b83, #3b8d99);
-    max-width: 1280px;
-    max-height: 720px;
+    max-width: 1980px;
+    max-height: 1280px;
 }
 
 hr {
@@ -18,9 +18,13 @@ hr {
     background: #333333;
 }
 
+a {text-decoration: none}
+a:hover {color:  #990100}
+a:active {color:  #b90504}
+
 .avatar_line {
     position: relative;
-    top: 13%;
+    top: 10%;
 }
 
 .center {
@@ -30,17 +34,17 @@ hr {
     position: absolute;
     left: 50%;
     top: 50%;
-    width: 380px;
-    height: 600px;
-    margin: -316px 0 0 -190px;
+    width: 480px;
+    height: 700px;
+    margin: -366px 0 0 -240px;
     animation: center 1.5s ease-in-out;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     perspective: 600px;
 }
 
 .centerimg {
-    width: 340px;
-    height: 340px;
+    width: 440px;
+    height: 440px;
     z-index: 999;
     position: relative;
     border: #212121 solid 0.2px;
@@ -67,10 +71,6 @@ hr {
     margin-left: 3px;
 }
 
-a {text-decoration: none}
-a:hover {color:  #990100}
-a:active {color:  #b90504}
-
 @keyframes center {
     from {
         top: 75%;
@@ -87,7 +87,7 @@ a:active {color:  #b90504}
 #toast {
     position: absolute;
     width: 20%;
-    height: 4%;
+    height: 35px;
     border-radius: 8px;
     background-color: #333333aa;
     left: 40%;
