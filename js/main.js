@@ -29,13 +29,6 @@ discord.addEventListener("click", e =>
     }
 );
 
-// formula     http://easings.net/
-// description https://stackoverflow.com/questions/8316882/what-is-an-easing-function
-// x: percent
-// t: current time,
-// b: beginning value,
-// c: change in value,
-// d: duration
 function easeInOutQuad(x, t, b, c, d) {
     if ((t /= d / 2) < 1) {
         return c / 2 * t * t + b;
@@ -83,3 +76,12 @@ function toast_hide() {
     }
     toast.style.opacity = -hposition + "%";
 }
+
+
+function title_animation() {
+    // ethosa -> thosae -> hosaet -> osaeth -> saetho -> aethosa -> ethosa
+    // lol 👀
+    document.title = document.title.substring(1, 6) + document.title.substring(0, 1);
+}
+
+var title_handler = setInterval(title_animation, 1000 / 1);
