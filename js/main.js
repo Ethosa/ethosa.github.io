@@ -1,6 +1,6 @@
-var elem = document.getElementById("centerbox");
-var discord = document.getElementById("discord");
-var toast = document.getElementById("toast");
+var elem = document.getElementById("centerbox"),
+    discord = document.getElementById("discord"),
+    toast = document.getElementById("toast");
 
 var half_width = window.innerWidth/2;
 var half_height = window.innerHeight/2;
@@ -8,24 +8,19 @@ var delimeter = 50;
 
 window.addEventListener("mousemove", e =>
     {
-        var x = (e.pageY - half_height)/delimeter;
-        var y = (e.pageX - half_width)/delimeter;
+        var x = (e.pageY - half_height)/delimeter,
+            y = (e.pageX - half_width)/delimeter;
         elem.style.transform = 'rotateX(' + x + 'deg) rotateY(' + y + 'deg)';
     }
 );
 
+// Copy to clipboard "Ethosa#5301"
 discord.addEventListener("click", e =>
     {
-        if (!(handler === null)) {
-            return
-        }
+        if (!(handler === null)) {return}
         toast.style.opacity = "0%";
+        navigator.clipboard.writeText("Ethosa#5301");
         handler = setInterval(toast_show, 1000 / 60);
-        navigator.clipboard.writeText("Ethosa#5301").then(function() {
-          console.log('Async: Copying to clipboard was successful!');
-        }, function(err) {
-          console.error('Async: Could not copy text: ', err);
-        });
     }
 );
 
@@ -37,12 +32,15 @@ function easeInOutQuad(x, t, b, c, d) {
     }
 }
 
-var duration = 1.5,
-    start = 0,
+var duration = 1.5
+    start = 0
     finish = 100
     position = start
     time = 0
     handler = null
+    // hide toast
+    hstart = 150
+    hfinish = 0
 function toast_show() {
     time += 1 / 60;
     position = easeInOutQuad(time * 100 / duration, time, start, finish, duration);
@@ -57,16 +55,11 @@ function toast_show() {
     }
     toast.style.opacity = position + "%";
 }
-
-
-var hstart = 150,
-    hfinish = 0
-    position = hstart
 function toast_hide() {
     time += 1 / 60;
-    hposition = easeInOutQuad(time * 100 / duration, time, hstart-hstart, hfinish+hstart, duration)-hstart;
+    position = easeInOutQuad(time * 100 / duration, time, hstart-hstart, hfinish+hstart, duration)-hstart;
 
-    if (hposition >= hfinish) {
+    if (position >= hfinish) {
         position = start
         time = 0
         clearInterval(handler);
@@ -74,7 +67,7 @@ function toast_hide() {
         toast.style.opacity = hfinish + "%";
         return;
     }
-    toast.style.opacity = -hposition + "%";
+    toast.style.opacity = -position + "%";
 }
 
 
