@@ -1,10 +1,9 @@
 var elem = document.getElementById("centerbox"),
     discord = document.getElementById("discord"),
     toast = document.getElementById("toast");
-
-var half_width = window.innerWidth/2;
-var half_height = window.innerHeight/2;
-var delimeter = 50;
+    half_width = window.innerWidth/2;
+    half_height = window.innerHeight/2;
+    delimeter = 50;
 
 window.addEventListener("mousemove", e =>
     {
@@ -77,4 +76,4 @@ function title_animation() {
     document.title = document.title.substring(1, 6) + document.title.substring(0, 1);
 }
 
-var title_handler = setInterval(title_animation, 1000 / 1);
+var title_interval = setInterval(title_animation, 1000);

@@ -4,10 +4,27 @@ body {
     font-family: "Source Sans Pro", Helvetica, sans-serif;
     font-weight: 100;
     color:  #333333;
+    position: absolute;
+    bottom: 50%;
+    right: 50%;
+    overflow: hidden;
+}
 
-    background: linear-gradient(to right, #aa4b6b, #6b6b83, #3b8d99);
-    max-width: 1980px;
-    max-height: 1280px;
+body:before {
+    content:"";
+    position: absolute;
+    width: 550em;
+    height: 550em;
+    margin-left: -275em;
+    margin-top: -275em;
+    background: linear-gradient(#aa4b6b, #6b6b83, #3b8d99);
+    -webkit-animation: linear-gradient-animation linear 8s infinite;
+    -moz-animation: linear-gradient-animation linear 8s infinite;
+    animation: linear-gradient-animation linear 8s infinite;
+}
+
+@keyframes linear-gradient-animation {
+    to {transform: rotate(360deg);}
 }
 
 hr {
