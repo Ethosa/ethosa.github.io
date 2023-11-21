@@ -6,3 +6,15 @@ translatable:
     "ru" -> "Добро пожаловать в мое резюме"
   "CV":
     "ru" -> "Резюме"
+  "My projects:":
+    "ru" -> "Мои проекты:"
+  "My skills:":
+    "ru" -> "Мои навыки:"
+  "Contact me:":
+    "ru" -> "Связаться со мной:"
+  "Programming languages":
+    "ru" -> "Язык программирования"
+  "Web frameworks":
+    "ru" -> "Веб-фреймворки"
+  "Databases":
+    "ru" -> "Базы данных"

@@ -1,6 +1,7 @@
 # Import HappyX
 import
   happyx,
+  components/[social, project, skill],
   pages/[index],
   common
 
