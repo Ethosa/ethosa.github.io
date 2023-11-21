@@ -1,0 +1,9 @@
+# Nimcache
+nimcache/
+cache/
+build/
+
+# Garbage
+*.exe
+*.log
+*.lg
