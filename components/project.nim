@@ -9,7 +9,7 @@ component Project:
   `template`:
     tA(
       href = self.url,
-      class = "w-full flex items-center gap-2 bg-neutral-800 hover:bg-neutral-700 rounded-md transition-all pr-2"
+      class = "w-full flex items-center text-3xl xl:text-base gap-4 xl:gap-2 bg-neutral-800 hover:bg-neutral-700 rounded-md transition-all pr-2"
     ):
-      tImg(src = self.image, class = "w-10 h-10 rounded-md")
+      tImg(src = self.image, class = "w-16 xl:w-10 h-16 xl:h-10 rounded-md")
       tP: {self.text}

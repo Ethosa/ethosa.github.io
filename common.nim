@@ -13,8 +13,10 @@ translatable:
   "Contact me:":
     "ru" -> "Связаться со мной:"
   "Programming languages":
-    "ru" -> "Язык программирования"
+    "ru" -> "Языки программирования"
   "Web frameworks":
     "ru" -> "Веб-фреймворки"
   "Databases":
     "ru" -> "Базы данных"
+  "Other":
+    "ru" -> "Прочее"
