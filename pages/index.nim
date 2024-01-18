@@ -115,6 +115,10 @@ mount MainPage:
                 "/public/skills/git.svg"
               )
               Skill(
+                "Docker",
+                "/public/skills/docker.svg"
+              )
+              Skill(
                 "Jetpack Compose",
                 "/public/skills/jetpackcompose.svg"
               )

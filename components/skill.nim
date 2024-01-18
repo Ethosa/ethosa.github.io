@@ -5,7 +5,7 @@ component Skill:
   text: string
   image: string
 
-  `template`:
+  html:
     tDiv(class = "flex group justify-center gap-1 cursor-pointer dropdown"):
       tImg(src = self.image, class = "w-16 xl:w-12 h-16 xl:h-12 rounded-md")
       tDiv(
