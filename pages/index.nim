@@ -130,6 +130,10 @@ mount MainPage:
                 "Godot Engine",
                 "/public/skills/godot.svg"
               )
+              Skill(
+                "Figma",
+                "/public/skills/figma.svg"
+              )
 
         # Social links
         tDiv(class = "flex w-full items-center flex-col gap-8 xl:gap-2"):
