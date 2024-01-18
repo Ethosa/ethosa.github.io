@@ -126,6 +126,10 @@ mount MainPage:
                 "Android Stuido + Android SDK",
                 "/public/skills/androidstudio.svg"
               )
+              Skill(
+                "Godot Engine",
+                "/public/skills/godot.svg"
+              )
 
         # Social links
         tDiv(class = "flex w-full items-center flex-col gap-8 xl:gap-2"):
