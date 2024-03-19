@@ -38,7 +38,7 @@ mount MainPage:
           tDiv(class = "flex flex-col gap-2"):
             tP(class = "text-4xl xl:text-xl"):
               {translate"My skills:"}
-            tP(class = "text-3xl xl:text-lg opacity-80"):
+            tP(class = "text-3xl xl:text-lg opacity-70"):
               {translate"Programmings"}
             tDiv(class = "grid grid-cols-4 xl:grid-cols-7 gap-4 xl:gap-2"):
               Skill(
@@ -69,7 +69,7 @@ mount MainPage:
                 "C#",
                 "/public/skills/csharp.svg"
               )
-            tP(class = "text-3xl xl:text-lg opacity-80"):
+            tP(class = "text-3xl xl:text-lg opacity-70"):
               {translate"Web frameworks"}
             tDiv(class = "grid grid-cols-4 xl:grid-cols-7 gap-4 xl:gap-2"):
               Skill(
@@ -92,7 +92,7 @@ mount MainPage:
                 "Tailwind CSS",
                 "/public/skills/tailwindcss.svg"
               )
-            tP(class = "text-3xl xl:text-lg opacity-80"):
+            tP(class = "text-3xl xl:text-lg opacity-70"):
               {translate"Databases"}
             tDiv(class = "grid grid-cols-4 xl:grid-cols-7 gap-4 xl:gap-2"):
               Skill(
@@ -111,7 +111,7 @@ mount MainPage:
                 "SQLite",
                 "/public/skills/sqlite.svg"
               )
-            tP(class = "text-3xl xl:text-lg opacity-80"):
+            tP(class = "text-3xl xl:text-lg opacity-70"):
               {translate"Other"}
             tDiv(class = "grid grid-cols-3 xl:grid-cols-7 gap-4 xl:gap-2"):
               Skill(
