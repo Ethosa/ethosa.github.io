@@ -123,6 +123,10 @@ mount MainPage:
                 "/public/skills/docker.svg"
               )
               Skill(
+                "Nginx",
+                "/public/skills/nginx.svg"
+              )
+              Skill(
                 "Jetpack Compose",
                 "/public/skills/jetpackcompose.svg"
               )
