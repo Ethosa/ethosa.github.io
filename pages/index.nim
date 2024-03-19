@@ -39,34 +39,34 @@ mount MainPage:
             tP(class = "text-4xl xl:text-xl"):
               {translate"My skills:"}
             tP(class = "text-3xl xl:text-lg opacity-80"):
-              {translate"Programming languages"}
+              {translate"Programmings"}
             tDiv(class = "grid grid-cols-4 xl:grid-cols-7 gap-4 xl:gap-2"):
               Skill(
-                "Nim language",
+                "Nim",
                 "/public/skills/nim.svg",
               )
               Skill(
-                "Lua language",
+                "Lua",
                 "/public/skills/lua.svg",
               )
               Skill(
-                "Python language",
+                "Python",
                 "/public/skills/python.svg"
               )
               Skill(
-                "JavaScript language",
+                "JavaScript",
                 "/public/skills/javascript.svg"
               )
               Skill(
-                "TypeScript language",
+                "TypeScript",
                 "/public/skills/typescript.svg"
               )
               Skill(
-                "Kotlin language",
+                "Kotlin",
                 "/public/skills/kotlin.svg"
               )
               Skill(
-                "C# language",
+                "C#",
                 "/public/skills/csharp.svg"
               )
             tP(class = "text-3xl xl:text-lg opacity-80"):
@@ -79,6 +79,10 @@ mount MainPage:
               Skill(
                 "Vue.js",
                 "/public/skills/vuedotjs.svg"
+              )
+              Skill(
+                "Nuxt.js",
+                "/public/skills/nuxt.svg"
               )
               Skill(
                 "Fast API",
@@ -123,7 +127,7 @@ mount MainPage:
                 "/public/skills/jetpackcompose.svg"
               )
               Skill(
-                "Android Stuido + Android SDK",
+                "Android Studio + Android SDK",
                 "/public/skills/androidstudio.svg"
               )
               Skill(
